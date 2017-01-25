@@ -1,0 +1,34 @@
+// out: style.css
+
+bg = #413F45
+add = #403D45
+font = #CECECE // potencjalnie do zmiany
+
+body
+    width 100%
+    height 100vh
+
+.hidden
+    display none
+
+.faded
+    color #555
+
+#scene
+    width 100%
+    height 100vh
+
+#users
+    height 100vh
+
+#chat
+    height 100vh
+    display flex
+    flex-direction column
+    justify-content center
+    & > #messages
+        border .1em solid font
+        flex 4
+        overflow-y auto
+    & > #messageForm
+        flex 1

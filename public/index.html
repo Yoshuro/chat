@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="/static/style.css">
+        <title>Socket IO Chat</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row" id="scene">
+                <div class="col-md-3" id="users">
+                    <ul class="list-group" id="userList"></ul>
+                </div>
+                <div class="col-md-9" id="chat">
+                    <form id="userForm">
+                        <div class="form-group">
+                            <label>
+                                Enter a Username:
+                            </label>
+                            <input type="text" class="form-control" id="username" />
+                        </div>
+                        <input type="submit" class="btn btn-primary"  />
+                    </form>
+                    <div id="messages">
+                        <ul class="list-group"></ul>
+                    </div>
+                    <form id="messageForm">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="message"/>
+                            <input type="submit" class="form-control btn btn-primary" value="Send" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/static/main.js"></script>
+    </body>
+</html>

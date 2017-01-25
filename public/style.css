@@ -1,0 +1,31 @@
+body {
+  width: 100%;
+  height: 100vh;
+}
+.hidden {
+  display: none;
+}
+.faded {
+  color: #555;
+}
+#scene {
+  width: 100%;
+  height: 100vh;
+}
+#users {
+  height: 100vh;
+}
+#chat {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#chat > #messages {
+  border: 0.1em solid #cecece;
+  flex: 4;
+  overflow-y: auto;
+}
+#chat > #messageForm {
+  flex: 1;
+}
